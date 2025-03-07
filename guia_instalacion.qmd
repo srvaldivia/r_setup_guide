@@ -1,0 +1,155 @@
+---
+title: "Primeros pasos con R y RStudio"
+subtitle: "Guía de instalación"
+author: "Sebastián Valdivia Ramírez"
+date: "today"
+date-format: "MMMM YYYY"
+format:
+  html:
+    number-sections: true
+    embed-resources: true
+    toc: true
+    toc_float: true
+  gfm: default
+format-links: false
+editor: visual
+lang: es
+editor_options: 
+  chunk_output_type: console
+---
+
+<br>
+
+```{r}
+
+```
+
+## Descarga e Instalación de R
+
+Para instalar la última versión disponible de R ingrese al sitio web de CRAN (*The Comprehensive R Archive Network*) haciendo clic en el link <https://cran.r-project.org/bin/windows/base/>. Una vez allí descargue la versión de R más actualizada que se encuentre disponible.
+
+A modo de ejemplo, la @fig-1 muestra que la versión disponible al `{r} Sys.Date()` corresponde a la `{r} paste0(R.Version()$major, ".", R.Version()$minor)`. Para descargarla haca clic en `Download R-4.4.3 for Windows`.
+
+![Descarga de R desde CRAN](img/1_cran.png){#fig-1 fig-align="center" width="530"}
+
+::: callout-note
+Para descargar la versión de R compatible con MacOS ingrese a este link <https://cran.r-project.org/bin/macosx/>.
+:::
+
+Al abrir el archivo recién descargado se desplegarán una serie de ventanas que configuran la instalación del lenguaje R. Siga las instrucciones que aparecen en las imágenes que se muestran a continuación.
+
+1.  **Seleccione** el idioma **Español** y presione **Siguiente**.(@fig-2).
+
+![Idioma de instalación](img/2_idioma.png){#fig-2 fig-align="center"}
+
+<br>
+
+2.  Presione **Siguiente** para aceptar las condiciones de uso. (@fig-3).
+
+![Condiciones de uso de R](img/3_licencia.png){#fig-3 fig-align="center" width="450"}
+
+<br>
+
+3.  Haga clic en **Siguiente** para **aceptar la ruta de instalación** que viene por defecto. (@fig-4).
+
+![Directorio de instalación de R](img/4_ruta.png){#fig-4 fig-align="center" width="450"}
+
+<br>
+
+4.  En la ventana de la @fig-5 **desactive la casilla Message translations** y luego **presione** **Siguiente**.
+
+![Componentes de instalación](img/5_componentes.png){#fig-5 fig-align="center" width="450"}
+
+::: callout-warning
+Debido a que la mayoría de la documentación y literatura de R está en inglés recomendamos fuertemente que desactiven la casilla *Message translations*.
+:::
+
+<br>
+
+5.  En la ventana de la @fig-6 **escoja la opción** **No** y luego **presione** **Siguiente**.
+
+![Componentes de instalación](img/6_startup.png){#fig-6 fig-align="center" width="450"}
+
+<br>
+
+6.  En la ventana de la (@fig-7) **presione** **Siguiente** para aceptar que se cree una carpeta en el Menú Inicio.
+
+![Componentes de instalación](img/7_menu.png){#fig-7 fig-align="center" width="450"}
+
+<br>
+
+7.  **Modifique las casillas** de acuerdo a la @fig-8 y luego **presione** **Siguiente** para comenzar con la instalación.
+
+![Componentes de instalación](img/8_shortcuts.png){#fig-8 fig-align="center" width="450"}
+
+<br>
+
+Una vez que haya finalizado la instalación aparecerá una ventana similar a la @fig-9. **Presione Finish** para terminar.
+
+![Componentes de instalación](img/9_fin_r.png){#fig-9 fig-align="center" width="450"}
+
+<br>
+
+Para comprobar que la instalación se haya realizado correctamente haga clic en el Menú Inicio \> carpeta R, y luego abra el archivo que pertenezca a la versión recién instalada. Si la ventana que aparece es similar a la (@fig-10) significa que R se instaló en su computador.
+
+![Componentes de instalación](img/10_gui.png){#fig-10 fig-align="center" width="450"}
+
+## Descarga e Instalación de RStudio
+
+Ingrese al sitio web <https://posit.co/download/rstudio-desktop/> para descargar RStudio y escoja la última versión que aparezca disponible haciendo clic en el botón `DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS` (@Fig-11). En el caso que su sistema operativo sea distinto a Windows (por ejemplo, MacOS o Linux) baje hasta la sección `All Installers and Tarballs` y descargue el instalador correspondiente a su sistema operativo.
+
+![Componentes de instalación](img/11_rstudio.png){#fig-11 fig-align="center" width="525"}
+
+<br>
+
+Una vez finalizada la descarga abra el archivo descargado lo que desplegará la ventana de inicio de instalación de RStudio (@Fig-12). Siga las instrucciones que aparecen en las imágenes que se muestran a continuación.
+
+1.  **Presione** el botón **Siguiente** (@Fig-12).
+
+![Componentes de instalación](img/12_inicio.png){#fig-12 fig-align="center" width="450"}
+
+<br>
+
+2.  **Acepte la ruta de instalación** que aparece por defecto (@Fig-13). **Para finalizar** la instalación **haga clic** en **Instalar**.
+
+![Componentes de instalación](img/13_ruta.png){#fig-13 fig-align="center" width="450"}
+
+<br>
+
+3.  Una vez finalizada la instalación aparecerá una ventana similar a la @Fig-14. Haga **clic** en **Terminar** para completar el proceso de instalación.
+
+    ![Componentes de instalación](img/14_fin_rstudio.png){#fig-14 fig-align="center" width="450"}
+
+Para comprobar que RStudio se instaló correctamente haga clic en el Menú Inicio y luego en la aplicación RStudio. Si se despliega una ventana similar a la @Fig-15 significa que la instalación se realizó de forma correcta.
+
+![Ventana principal de RStudio](img/15_ventana_rstudio.png){#fig-15 fig-align="center" width="692"}
+
+## Configuración inicial de RStudio
+
+A continuación se configurarán algunas opciones generales que serán de ayuda para interactuar de manera más fácil con RStudio.
+
+En la barra superior de la ventana de RStudio (@fig-15) haga clic en `Tools`\> seleccione `Global Options` \> y luego sección `General` (@fig-16).
+
+![Ventana principal de RStudio](img/16_rs.png){#fig-16 fig-align="center" width="692"}
+
+Observe esta pestaña y ajuste las opciones de acuerdo a lo siguiente:
+
+-   **Desactivar** la **casilla** “Restore most recently opened project at startup” **(1)**.
+
+-   **Desactivar** la **casilla** “Restore previously open source document at startup” **(2)**.
+
+-   **Desactivar** la **casilla** “Restore .RData into workspace at startup” **(3)**.
+
+-   **Escoger** la **opción** “Never” en la casilla “Save workspace to .RData on exit” **(4)**.
+
+-   **Desactivar** la **casilla** “Always save history (even when not saving.RData)” **(5)**.
+
+<br>
+
+Diríjase a la sección `Code` y seleccione la pestaña `Editing` (@fig-17). Una vez ahí **active la casilla** “Use native pipe operator, \|\> (requires R 4.1+)” **(6)**.
+
+![Ventana principal de RStudio](img/17_rs.png){#fig-17 fig-align="center" width="692"}
+
+Diríjase a la pestaña `Saving`, haga clic en el botón `Change…`, y seleccione la opción `UTF-8`.
+
+Para guardar estos cambios haga clic en el botón `OK` en la ventana de `Global` `Options`. Esto cerrará la ventana de `Global` `Options`volviendo a la ventana principal de RStudio.
