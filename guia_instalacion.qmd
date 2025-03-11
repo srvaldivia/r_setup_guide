@@ -128,9 +128,9 @@ Para comprobar que RStudio se instaló correctamente haga clic en el Menú Inici
 
 A continuación se configurarán algunas opciones generales que serán de ayuda para interactuar de manera más fácil con RStudio.
 
-En la barra superior de la ventana de RStudio (@fig-15) haga clic en `Tools`\> seleccione `Global Options` \> y luego sección `General` (@fig-16).
+En la barra superior de la ventana de RStudio (@fig-15) haga clic en `Tools`\> seleccione `Global Options` \> sección `General` \> y luego en la pestaña `Basic` (@fig-16).
 
-![Ventana principal de RStudio](img/16_rs.png){#fig-16 fig-align="center" width="692"}
+![Global options \> General \> Basic](img/16_rs.png){#fig-16 fig-align="center" width="692"}
 
 Observe esta pestaña y ajuste las opciones de acuerdo a lo siguiente:
 
@@ -148,8 +148,28 @@ Observe esta pestaña y ajuste las opciones de acuerdo a lo siguiente:
 
 Diríjase a la sección `Code` y seleccione la pestaña `Editing` (@fig-17). Una vez ahí **active la casilla** “Use native pipe operator, \|\> (requires R 4.1+)” **(6)**.
 
-![Ventana principal de RStudio](img/17_rs.png){#fig-17 fig-align="center" width="692"}
+![Global options \> Code \> Editing](img/17_rs.png){#fig-17 alt="Global options > General >Basic" fig-align="center"}
 
-Diríjase a la pestaña `Saving`, haga clic en el botón `Change…`, y seleccione la opción `UTF-8`.
+En la misma a la sección `Code` seleccione la pestaña `Display` y marque las siguientes opciones de acuerdo a la (@fig-18).
 
-Para guardar estos cambios haga clic en el botón `OK` en la ventana de `Global` `Options`. Esto cerrará la ventana de `Global` `Options`volviendo a la ventana principal de RStudio.
+![Global options \> Code \> Display](img/18_rs.png){#fig-18 alt="Global options > General > Basic" fig-align="center"}
+
+-   **Activar** la **casilla** “Highlight selected word” **(7)**.
+
+-   **Activar** la **casilla** “Show margin” **(8)**.
+
+-   **Activar** la **casilla** “Allow scroll past end of document” **(9)**.
+
+-   **Activar** la **opción** “Highlight R function calls” **(10)**.
+
+-   **Activar** la **casilla** “Rainbow parentheses” **(11)**.
+
+Finalmente diríjase a la pestaña `Saving`, haga clic en el botón `Change…`, y seleccione la opción `UTF-8` (@fig-19).
+
+![Global options \> Code \> Saving](img/19_rs.png){#fig-19 alt="Ventana principal de RStudio" fig-align="center"}
+
+Para guardar todos estos cambios haga clic en el botón `OK` en la ventana de `Global` `Options`. Esto cerrará la ventana de `Global` `Options`volviendo a la ventana principal de RStudio.
+
+::: callout-note
+La configuración inicial de RStudio se realiza una vez por computador, por lo tanto, no es necesario volver a realizar estos pasos la próxima vez que utilice RStudio a menos que utilice otro computador.
+:::
